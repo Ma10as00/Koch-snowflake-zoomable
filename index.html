@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta 
+            name="viewport"
+            content="width=device-width, initial-scale=1.0">
+        <title>Koch Snowflake</title>
+        <link rel="stylesheet" href="./styles.css"> <!--TODO: Link to css file-->
+        <meta
+            name="description"
+            content="A drawing of the Koch snowflake, with an interactive slider to adjust the depth of the Koch curve recursion.">
+                <!--It is recommended that you keep your descriptions short and concise. 
+                This is because search engines will often truncate the description based on the results page layout.-->
+        <!--
+        Open Graph (OG) tags 
+        The following four are the most important OG tags, but there are many more.
+        -->
+        <meta property="og:title" content="Koch Snowflake"> <!--Title for SoMe-->
+        <meta property="og:type" content="website"> <!--Type of content (website/videos/articles/music/etc...)-->
+        <meta property="og:image" content="./images/logo"> <!--High quality image representing your page-->
+        <meta property="og:url" content="https://www.___.no">
+    </head>
+    <body>
+        <div class="slider-container">
+            <input id="depthSlider" type="range" min="0" max="20" value="3" step="1">
+            <div class="slider-labels">
+                <span>0</span>
+                <span>5</span>
+                <span>10</span>
+                <span>15</span>
+                <span>20</span>
+            </div>
+        </div>
+
+        <canvas id="snowCanvas"></canvas>
+        <script src="./script.js"></script> <!--TODO: Link to the JavaScript script for interactive functionality-->
+    </body>
+</html>
